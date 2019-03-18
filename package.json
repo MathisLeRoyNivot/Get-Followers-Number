@@ -1,0 +1,26 @@
+{
+  "name": "get-followers-number",
+  "version": "1.0.0",
+  "description": "Simple Node.JS Project that recover the number of user's followers on several social networks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathisLeRoyNivot/Get-Followers-Number.git"
+  },
+  "author": "Mathis LE ROY-NIVOT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathisLeRoyNivot/Get-Followers-Number/issues"
+  },
+  "homepage": "https://github.com/MathisLeRoyNivot/Get-Followers-Number#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "path": "^0.12.7",
+    "yargs": "^13.2.2"
+  }
+}
