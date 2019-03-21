@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/MathisLeRoyNivot/Get-Followers-Number#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
     "path": "^0.12.7",
+    "waait": "^1.0.4",
     "yargs": "^13.2.2"
   }
 }

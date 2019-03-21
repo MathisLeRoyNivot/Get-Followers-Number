@@ -1,8 +1,8 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const http = require('http');
-const mongoose = require('mongoose');
 const path = require('path');
+// const mongoose = require('mongoose');
 
 const app = express();
 app.use(bodyParser.json());
