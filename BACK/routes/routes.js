@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // Generating the home page
 const getHomePage = app.get('/', (req, res) => {
-    const homePage = path.join(__dirname, '../views/' + 'home.html');
+    const homePage = path.join(__dirname, '../../FRONT/views/' + 'home.html');
     res.sendFile(homePage);
 });
 
