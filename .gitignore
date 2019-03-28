@@ -1,2 +1,2 @@
-nodes-modules/
-
+# Ignore Nodes modules folder when commit
+node_modules/
