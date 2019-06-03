@@ -24,7 +24,26 @@ const launchRecovery = async () => {
 
 launchRecovery;
 
-//Launch server on port given by the user
+import {
+    getHTML,
+    getTwitterFollowers,
+    getInstagramFollowers,
+} from './lib/scraper';
+  
+  async function go() {
+    const iPromise = getHTML('https://instagram.com/wesbos');
+    const tPromise = getHTML('https://twitter.com/wesbos');
+    const [instagramHTML, twitterHTML] = await Promise.all([iPromise, tPromise]);
+    const instagramCount = await getInstagramFollowers(instagramHTML);
+    const twCount = await getTwitterFollowers(twitterHTML);
+    console.log(
+      `You have ${twCount} twitter followers and ${instagramCount} instagram followers`
+    );
+  }
+  
+  go();
+
+// Launch server on port given by the user
 // http.Server(routes.app);
 // routes.app.listen(port, () => {
 //     console.log(`Server is running on port : ${port}\nYou can routing to the server at the following address :\x1b[31m http://localhost:${port}/`)
